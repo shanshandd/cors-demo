@@ -39,7 +39,7 @@ let server = http.createServer(function (req, res) {
         
         res.setHeader('Content-Type', 'text/javascript;charset=utf-8')
         // referer检查
-        if(req.headers.referer.indexOf('http://frank.com:9999') === 0){
+        if(req.headers.referer.indexOf('http://localhost:9999') === 0){
             res.statusCode = 200
             let string = 'window["{{xxx}}"]({{json}})';
             let jsonData = fs.readFileSync('aa.json').toString();

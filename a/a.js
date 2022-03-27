@@ -1,10 +1,10 @@
 btn.onclick = ()=>{
     let data = 'hello'
-    let page = window.open('http://frank.com:9999','frank')
-    page.postMessage(data,'http://frank.com:9999')
+    let page = window.open('http://localhost:9999','frank')
+    page.postMessage(data,'http://localhost:9999')
 }
 window.addEventListener('message', (e) => {
-    console.log('qq.com')
+    console.log('a.com')
     console.log(e.data)
 })
 
